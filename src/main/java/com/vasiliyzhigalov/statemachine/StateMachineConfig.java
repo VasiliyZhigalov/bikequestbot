@@ -63,11 +63,9 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
         transitions
                 .withExternal()
                 .source(INIT).target(START).event(DEFAULT)
-                .and()
-                .withExternal()
+                .and().withExternal()
                 .source(START).target(CREATE_QUEST).event(CREATE_QUEST_BUTTON)
-                .and()
-                .withExternal()
+                .and().withExternal()
                 .source(START).target(PASS_QUEST).event(PASS_QUEST_BUTTON);
     }
 }
