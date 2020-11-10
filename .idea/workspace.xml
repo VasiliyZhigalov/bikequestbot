@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:hw01-maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f9538998-fc7b-493a-9dad-28c0888abde8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/BikeQuestBotApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/BotConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/botApi/BikeQuestBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/botApi/UpdateProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/statemachine/StateMachineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/statemachine/action/StartAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/statemachine/events/EventMapConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/statemachine/events/Events.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/statemachine/states/States.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/controller/WebHookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/BikeQuestBotApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/bot/botApi/BikeQuestBot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/bot/botApi/UpdateProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/bot/statemachine/StateMachineConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/bot/statemachine/StateMachineConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw/временные/otus_java_2019_12!!!/.idea/otus_java_2019_12!!!.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../invest/invest-openapi-java-sdk/core/openapi-java-sdk-core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../invest/invest-openapi-java-sdk/example/openapi-java-sdk-example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../invest/invest-openapi-java-sdk/openapi-java-sdk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../invest/invest-openapi-java-sdk/sdk-java8/openapi-java-sdk-java8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/BikeQBot/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/BikeQBot/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/BikeQBot/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/BikeQBot/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/BikeQBot/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/BikeQBot/bikequestbot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/bikequestbot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/bikequestbot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/BikeQuestBotApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/bot/botApi/BikeQuestBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/bot/botApi/UpdateProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/bot/statemachine/BotStateMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/bot/statemachine/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/bot/statemachine/EventSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/bot/statemachine/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/bot/statemachine/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/config/BotConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/config/HandlersConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/config/StateMachineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/controller/WebHookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/handlers/AbstractHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/handlers/StartMenuHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/handlers/createquest/CreateQuestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/handlers/createquest/CreateQuestStageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/handlers/editquest/EditQuestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/helper/UpdateParseHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/model/Quest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/model/QuestStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/model/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/repository/QuestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/repository/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/repository/inmemory/QuestRepositoryInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/repository/inmemory/TeamRepositoryInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/repository/inmemory/UserRepositoryInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/QuestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/QuestStageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/SenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/dbservices/QuestDbService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/dbservices/TeamDbService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/dbservices/UserDbService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/keyboardbuilder/InlineKeyboardBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/keyboardbuilder/ReplyKeyboardBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/menu/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/menu/StartStateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/menu/createquest/CreateQuestMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/menu/createquest/CreateQuestStageMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/java/com/vasiliyzhigalov/services/menu/createquest/QuestMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/main/resources/replyMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/test/java/services/QuestStageServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project work/bikequestbot/src/test/java/services/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinkoff-invest/tinkoff-invest.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\m2\repository" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k5RZalaCSoZy5EAJQmCbfB0g5J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.vasiliyzhigalov.bot.statemachine" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vasiliyzhigalov.bot" />
+      <recent name="com.vasiliyzhigalov.controller" />
+      <recent name="com.vasiliyzhigalov" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\bikequestbot\src\main\resources" />
+      <recent name="C:\projects\bikequestbot\src\main\java\com\vasiliyzhigalov" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BikeQuestBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bikequestbot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vasiliyzhigalov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vasiliyzhigalov.BikeQuestBotApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BikeQuestBotApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+    <option name="showDoc" value="false" />
+    <option name="showGraph" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9538998-fc7b-493a-9dad-28c0888abde8" name="Default Changelist" comment="" />
+      <created>1604988523275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604988523275</updated>
+      <workItem from="1604988524453" duration="7006000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="hw01-maven" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="91" key="#Inspections" timestamp="1604993566235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1604993566235" />
+    <state x="574" y="119" width="662" height="586" key="#com.intellij.ide.util.MemberChooser" timestamp="1604994164091">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="119" width="662" height="586" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604994164091" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604988944607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604988944607" />
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1604996221787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604996221787" />
+    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1604996221787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604996221787" />
+    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1604996221786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604996221786" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1604996221787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604996221787" />
+    <state width="1493" height="138" key="GridCell.Tab.1.bottom" timestamp="1604996221787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604996221787" />
+    <state width="1493" height="138" key="GridCell.Tab.1.center" timestamp="1604996221787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604996221787" />
+    <state width="1493" height="138" key="GridCell.Tab.1.left" timestamp="1604996221787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604996221787" />
+    <state width="1493" height="138" key="GridCell.Tab.1.right" timestamp="1604996221787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604996221787" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1604991246115">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604991246115" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604991058679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604991058679" />
+  </component>
+</project>
