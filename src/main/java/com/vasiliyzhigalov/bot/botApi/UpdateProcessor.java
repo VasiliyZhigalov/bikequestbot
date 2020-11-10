@@ -1,5 +1,6 @@
 package com.vasiliyzhigalov.bot.botApi;
 
+import com.vasiliyzhigalov.services.menu.CreateQuestStateService;
 import com.vasiliyzhigalov.services.menu.SenderService;
 import com.vasiliyzhigalov.services.menu.StartStateService;
 import com.vasiliyzhigalov.statemachine.events.Events;
@@ -28,24 +29,20 @@ public class UpdateProcessor {
     private final StateMachinePersister<States, Events, Long> persister;
     private final StartStateService startStateService;
     private final SenderService senderService;
+    private final CreateQuestStateService createQuestStateService;
 
     public BotApiMethod handle(Update update) {
         StateMachine<States, Events> stateMachine = stateMachineFactory.getStateMachine();
         log.warn("new update from userId :{}, message: {}", update.getMessage().getChatId(), update.getMessage().getText());
-        injectServicesToStateMachineContext(stateMachine);
         if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
-            stateMachine.getExtendedState().getVariables().put("callbackQuery", callbackQuery);
             Long userId = callbackQuery.getFrom().getId().longValue();
-            stateMachine.getExtendedState().getVariables().put("userId", userId);
-
             try {
                 persister.restore(stateMachine, userId);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            stateMachine.sendEvent(getCurrentEvent(callbackQuery.getData()));
-            try {
+                injectServicesToStateMachineContext(stateMachine);
+                stateMachine.getExtendedState().getVariables().put("callbackQuery", callbackQuery);
+                stateMachine.getExtendedState().getVariables().put("userId", userId);
+                stateMachine.sendEvent(getCurrentEvent(callbackQuery.getData()));
                 persister.persist(stateMachine, userId);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -53,16 +50,13 @@ public class UpdateProcessor {
 
         } else if (update.hasMessage()) {
             Message message = update.getMessage();
-            stateMachine.getExtendedState().getVariables().put("message", message);
             Long userId = message.getFrom().getId().longValue();
-            stateMachine.getExtendedState().getVariables().put("userId", userId);
             try {
                 persister.restore(stateMachine, userId);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            stateMachine.sendEvent(getCurrentEvent(message.getText()));
-            try {
+                injectServicesToStateMachineContext(stateMachine);
+                stateMachine.getExtendedState().getVariables().put("message", message);
+                stateMachine.getExtendedState().getVariables().put("userId", userId);
+                stateMachine.sendEvent(getCurrentEvent(message.getText()));
                 persister.persist(stateMachine, userId);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -75,6 +69,7 @@ public class UpdateProcessor {
     private void injectServicesToStateMachineContext(StateMachine<States, Events> stateMachine) {
         stateMachine.getExtendedState().getVariables().put("startStateService", startStateService);
         stateMachine.getExtendedState().getVariables().put("senderService", senderService);
+        stateMachine.getExtendedState().getVariables().put("createQuestStateService", createQuestStateService);
     }
 
     private Events getCurrentEvent(String messageText) {

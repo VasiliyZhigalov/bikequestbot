@@ -39,10 +39,11 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
         return new StateMachineListenerAdapter<>() {
             @Override
             public void transition(Transition<States, Events> transition) {
-                log.warn("move from:{} to:{}",
-                        Optional.of(transition.getSource().getId().name()).orElse("null"),
-                        Optional.of(transition.getTarget().getId().name()).orElse("null"));
+    /*            log.warn("move from: {} to: {}",
+                        Optional.of(transition.getSource().getId()).get(),
+                        Optional.of(transition.getTarget().getId()).orElse(NULL));*/
             }
+
         };
     }
 
@@ -53,6 +54,7 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
                 .initial(INIT)
                 .state(START, new StartAction())
                 .state(CREATE_QUEST, new CreateQuestAction())
+                .state(ADD_LOCATION, new CreateQuestAction())
                 .end(FINISH);
     }
 
@@ -65,6 +67,9 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
                 .source(INIT).target(START).event(DEFAULT)
                 .and().withExternal()
                 .source(START).target(CREATE_QUEST).event(CREATE_QUEST_BUTTON)
+                .and().withExternal()
+                .source(CREATE_QUEST).target(START).event(BACK_BUTTON)
+
                 .and().withExternal()
                 .source(START).target(PASS_QUEST).event(PASS_QUEST_BUTTON);
     }

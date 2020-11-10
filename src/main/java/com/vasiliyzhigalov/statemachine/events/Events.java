@@ -6,7 +6,7 @@ public enum Events {
     PASS_QUEST_BUTTON("Пройти квест"),
     BACK_BUTTON("Назад"),
     PROCEED_BUTTON("Продолжить"),
-    ADD_LOCATION("Добавить местоположение");
+    ADD_LOCATION_BUTTON("Добавить местоположение");
 
     private String inscription;
 

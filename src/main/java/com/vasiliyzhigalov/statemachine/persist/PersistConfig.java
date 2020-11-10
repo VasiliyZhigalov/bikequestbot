@@ -15,6 +15,7 @@ public class PersistConfig {
         return new InMemoryPersist();
     }
 
+    @Bean
     public StateMachinePersister<States, Events, Long> persister(StateMachinePersist<States, Events, Long> defaultPersist) {
         return new DefaultStateMachinePersister<>(defaultPersist);
     }

@@ -26,4 +26,9 @@ public class CreateQuestStateService {
     public SendMessage getCreateQuestMenu() {
         return new SendMessage().setText(createQuestMessage).setReplyMarkup(replyKeyboardMarkup());
     }
+
+    public SendMessage addLocationMenu() {
+    ///Дописать
+        return null
+    }
 }
