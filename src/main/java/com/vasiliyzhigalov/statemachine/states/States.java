@@ -8,5 +8,8 @@ public enum States {
     ADD_LOCATION,
     PASS_QUEST,
     FINISH,
-    NULL;
+    NULL,
+    LOCATION_SAVED,
+    SAVE_QUEST_QUESTION,
+    QUEST_SAVED;
 }

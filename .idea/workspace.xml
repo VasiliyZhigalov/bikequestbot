@@ -20,21 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9538998-fc7b-493a-9dad-28c0888abde8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/AddNewStageQuestionAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/QuestSavedAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/SaveQuestQuestionAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/SendLocationAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/listener/BotStateMachineListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/action/SendLocationAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/botApi/UpdateProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/bot/botApi/UpdateProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/services/menu/CreateQuestStateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/services/menu/CreateQuestStateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/services/menu/SenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/services/menu/SenderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/StateMachineConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/StateMachineConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/CreateQuestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/CreateQuestAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/AddLocationAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/action/LocationSavedAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/events/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/events/Events.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/states/States.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vasiliyzhigalov/statemachine/states/States.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/replyMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/replyMessages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/bot/botApi/UpdateProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/bot/botApi/UpdateProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/services/menu/CreateQuestStateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/services/menu/CreateQuestStateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/StateMachineConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/StateMachineConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/services/menu/SenderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/services/menu/SenderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/StateMachineConfig$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/StateMachineConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/StateMachineConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/action/AddLocationAction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/events/Events.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/events/Events.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/states/States.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vasiliyzhigalov/statemachine/states/States.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/replyMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/replyMessages.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,9 +172,10 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
+    <option name="showFilesets" value="false" />
     <option name="showImplicitBeans" value="false" />
     <option name="showDoc" value="false" />
-    <option name="showGraph" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -174,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604988523275</updated>
       <workItem from="1604988524453" duration="24503000" />
-      <workItem from="1605067658758" duration="1749000" />
+      <workItem from="1605067658758" duration="20646000" />
     </task>
     <servers />
   </component>
@@ -210,10 +221,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1604993566235" />
-    <state x="574" y="119" width="662" height="586" key="#com.intellij.ide.util.MemberChooser" timestamp="1605022277096">
+    <state x="574" y="119" width="662" height="586" key="#com.intellij.ide.util.MemberChooser" timestamp="1605089713631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="119" width="662" height="586" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605022277096" />
+    <state x="574" y="119" width="662" height="586" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605089713631" />
     <state x="415" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605000708147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,45 +233,49 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604988944607" />
-    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1605068796335">
+    <state width="1493" height="489" key="GridCell.Tab.0.bottom" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605068796335" />
-    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1605068796335">
+    <state width="1493" height="489" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
+    <state width="1493" height="489" key="GridCell.Tab.0.center" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605068796335" />
-    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1605068796334">
+    <state width="1493" height="489" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
+    <state width="1493" height="489" key="GridCell.Tab.0.left" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605068796334" />
-    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1605068796335">
+    <state width="1493" height="489" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
+    <state width="1493" height="489" key="GridCell.Tab.0.right" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605068796335" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1605068796335">
+    <state width="1493" height="489" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
+    <state width="1493" height="489" key="GridCell.Tab.1.bottom" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605068796335" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1605068796335">
+    <state width="1493" height="489" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
+    <state width="1493" height="489" key="GridCell.Tab.1.center" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605068796335" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1605068796335">
+    <state width="1493" height="489" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
+    <state width="1493" height="489" key="GridCell.Tab.1.left" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605068796335" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1605068796335">
+    <state width="1493" height="489" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
+    <state width="1493" height="489" key="GridCell.Tab.1.right" timestamp="1605095107948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605068796335" />
+    <state width="1493" height="489" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605095107948" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1605004339246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605004339246" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604991058679">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605074886018">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604991058679" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605074886018" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605069415709">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605069415709" />
   </component>
 </project>

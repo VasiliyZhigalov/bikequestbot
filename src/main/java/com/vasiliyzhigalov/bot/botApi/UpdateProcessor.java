@@ -33,16 +33,21 @@ public class UpdateProcessor {
 
     public BotApiMethod handle(Update update) {
         StateMachine<States, Events> stateMachine = stateMachineFactory.getStateMachine();
-        log.warn("new update from userId :{}, message: {}", update.getMessage().getChatId(), update.getMessage().getText());
+        Events currentEvent = getCurrentEvent(update);
         if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
             Long userId = callbackQuery.getFrom().getId().longValue();
+            log.warn("__________________________________");
+            log.warn("new update from userId :{}, message: {}, has location: {}", userId, callbackQuery.getData(), false);
             try {
                 persister.restore(stateMachine, userId);
+                log.warn("State: {}", stateMachine.getState().getId());
                 injectServicesToStateMachineContext(stateMachine);
                 stateMachine.getExtendedState().getVariables().put("callbackQuery", callbackQuery);
                 stateMachine.getExtendedState().getVariables().put("userId", userId);
-                stateMachine.sendEvent(getCurrentEvent(callbackQuery.getData()));
+                log.warn("Send event: {}", currentEvent);
+                stateMachine.sendEvent(currentEvent);
+                Thread.sleep(1000);
                 persister.persist(stateMachine, userId);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -51,12 +56,17 @@ public class UpdateProcessor {
         } else if (update.hasMessage()) {
             Message message = update.getMessage();
             Long userId = message.getFrom().getId().longValue();
+            log.warn("__________________________________");
+            log.warn("new update from userId :{}, message: {}, has location: {}", userId, message.getText(), message.hasLocation());
             try {
                 persister.restore(stateMachine, userId);
+                log.warn("State: {}", stateMachine.getState().getId());
                 injectServicesToStateMachineContext(stateMachine);
                 stateMachine.getExtendedState().getVariables().put("message", message);
                 stateMachine.getExtendedState().getVariables().put("userId", userId);
-                stateMachine.sendEvent(getCurrentEvent(message.getText()));
+                log.warn("Send event: {}", currentEvent);
+                stateMachine.sendEvent(currentEvent);
+                Thread.sleep(1000);
                 persister.persist(stateMachine, userId);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -72,10 +82,21 @@ public class UpdateProcessor {
         stateMachine.getExtendedState().getVariables().put("createQuestStateService", createQuestStateService);
     }
 
-    private Events getCurrentEvent(String messageText) {
-
-        Events currentEvent = eventsMap.get(messageText) == null ? Events.DEFAULT : eventsMap.get(messageText);
-        log.warn("send event : {}", currentEvent);
+    private Events getCurrentEvent(Update update) {
+        Events currentEvent;
+        if (update.hasCallbackQuery()) {
+            CallbackQuery callbackQuery = update.getCallbackQuery();
+            currentEvent = eventsMap.get(callbackQuery.getData()) == null ? Events.DEFAULT : eventsMap.get(callbackQuery.getData());
+        } else if (update.hasMessage()) {
+            Message message = update.getMessage();
+            if (message.hasLocation()) {
+                currentEvent = Events.SEND_LOCATION_BUTTON;
+            } else {
+                currentEvent = eventsMap.get(message.getText()) == null ? Events.DEFAULT : eventsMap.get(message.getText());
+            }
+        } else {
+            currentEvent = Events.DEFAULT;
+        }
         return currentEvent;
     }
 
