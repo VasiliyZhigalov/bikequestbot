@@ -1,5 +1,7 @@
 package com.vasiliyzhigalov.statemachine;
 
+import com.vasiliyzhigalov.statemachine.action.AddLocationAction;
+import com.vasiliyzhigalov.statemachine.action.AddNewStageQuestionAction;
 import com.vasiliyzhigalov.statemachine.action.CreateQuestAction;
 import com.vasiliyzhigalov.statemachine.action.StartAction;
 import com.vasiliyzhigalov.statemachine.events.Events;
@@ -14,8 +16,6 @@ import org.springframework.statemachine.config.builders.StateMachineTransitionCo
 import org.springframework.statemachine.listener.StateMachineListener;
 import org.springframework.statemachine.listener.StateMachineListenerAdapter;
 import org.springframework.statemachine.transition.Transition;
-
-import java.util.Optional;
 
 import static com.vasiliyzhigalov.statemachine.states.States.*;
 import static com.vasiliyzhigalov.statemachine.events.Events.*;
@@ -54,7 +54,8 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
                 .initial(INIT)
                 .state(START, new StartAction())
                 .state(CREATE_QUEST, new CreateQuestAction())
-                .state(ADD_LOCATION, new CreateQuestAction())
+                .state(ADD_NEW_STAGE_QUESTION, new AddNewStageQuestionAction())
+                .state(ADD_LOCATION, new AddLocationAction())
                 .end(FINISH);
     }
 
@@ -67,9 +68,12 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
                 .source(INIT).target(START).event(DEFAULT)
                 .and().withExternal()
                 .source(START).target(CREATE_QUEST).event(CREATE_QUEST_BUTTON)
-                .and().withExternal()
-                .source(CREATE_QUEST).target(START).event(BACK_BUTTON)
-
+                    .and().withExternal()
+                    .source(CREATE_QUEST).target(START).event(BACK_BUTTON)
+                    .and().withExternal()
+                    .source(CREATE_QUEST).target(ADD_NEW_STAGE_QUESTION).event(PROCEED_BUTTON)
+                        .and().withExternal()
+                        .source(ADD_NEW_STAGE_QUESTION).target(ADD_LOCATION).event(YES)
                 .and().withExternal()
                 .source(START).target(PASS_QUEST).event(PASS_QUEST_BUTTON);
     }
