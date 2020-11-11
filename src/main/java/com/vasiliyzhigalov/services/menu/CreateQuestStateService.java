@@ -29,6 +29,6 @@ public class CreateQuestStateService {
 
     public SendMessage addLocationMenu() {
     ///Дописать
-        return null
+        return null;git
     }
 }
