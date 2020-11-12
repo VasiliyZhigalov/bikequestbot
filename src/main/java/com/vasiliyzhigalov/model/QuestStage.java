@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 @Entity
+@Table(name = "quest_stages")
 public class QuestStage {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,6 +16,7 @@ public class QuestStage {
     private String description;
     @OneToOne
     private QuestStage nextStage;
-    @OneToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn( name = "id")
     private Quest quest;
 }
