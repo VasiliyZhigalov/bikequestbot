@@ -1,16 +1,20 @@
 package com.vasiliyzhigalov.model;
 
-import lombok.Data;
+import lombok.*;
 
+import javax.persistence.*;
 import java.util.List;
 
 @Data
+@Entity
 public class Quest {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String photo;
     private String description;
-    private User creator;
+    private MyLocation location;
+    @OneToMany
     private List<QuestStage> questStages;
-    private boolean editable;
+
 }

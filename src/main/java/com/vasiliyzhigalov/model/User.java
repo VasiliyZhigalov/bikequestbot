@@ -1,16 +1,16 @@
 package com.vasiliyzhigalov.model;
 
+import lombok.*;
 
-import lombok.Data;
+import javax.persistence.*;
 
 @Data
+@Entity
 public class User {
-    private Integer id;
-    private Long chatId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String username;
     private String firstName;
     private String lastName;
-    private Team team;
-    private QuestStage passStage;
-    private QuestStage editableStage;
 }
