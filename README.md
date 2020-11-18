@@ -6,4 +6,5 @@
   Spring Web  
   Sring Data  
   Spring StateMachine  
+  JUnit  
   Lombok  
