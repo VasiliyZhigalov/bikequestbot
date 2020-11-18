@@ -1,9 +1,9 @@
-# bikequestbot(в разработке)
-Телеграм бот для создания и прохождения велоквестов
-Используемые технологии:
-Maven
+# Bikequestbot(в разработке)  
+Телеграм бот для создания и прохождения велоквестов  
+Используемые технологии:  
+Maven  
 Git
-Spring WEB
-Sring Data
-Spring StateMachine
-Lombok
+Spring Web  
+Sring Data  
+Spring StateMachine  
+Lombok  
