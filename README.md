@@ -2,9 +2,10 @@
 Телеграм бот для создания и прохождения велоквестов   
 Используемые технологии:  
   Maven  
-  Git
+  Git  
   Spring Web  
-  Sring Data  
-  Spring StateMachine  
+  Sring Data JPA  
+  Spring StateMachine 
+  Telegram API  
   JUnit  
   Lombok  
